@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilostyle.css">
+    <link rel="shortcut icon" href="imgens/et.png.png" type="image/x-icon">
+</head>
+<body>
+
+    <main class="main container">
+        <header class="cabecalho"> 
+            <img src="https://i.pinimg.com/736x/49/72/6e/49726e65f6b35c2e8e366a16c0734fb7.jpg" width="140" height="80" alt="logo da alura">
+            <h1>Mensagens Codificadas</h1>
+        </header>
+
+        <div class="container-input">
+            <div class="input">
+                <textarea id="input-texto" placeholder="Digite seu texto aqui..."></textarea>
+                <p>ATENÇÃO: Apenas letras minúsculas e sem acento</p>
+            </div>
+
+            <div id="output">
+                <h2>Sua mensagem aparecerá aqui!</h2>
+				<img id="imagem-placeholder" src="IMAGENS/et.png.png" alt="Imagem de placeholder" style="display: block;">
+				<span id="mensagem-saida"></span>
+				<button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div class="container-bnt">
+                <button class="btn-criptografar" onclick="criptografar()">Criptografar</button>
+                <button class="btn-descriptografar" onclick="descriptografar()">Descriptografar</button>
+                
+            </div>
+        </div>
+    </main>
+
+	<footer class="rodape">
+		<div class="icons">
+            <p> Desenvolvido por Wagner Silva</p>
+			<a href="https://www.instagram.com/wagnersilvapalestrante/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+			<a href="https://github.com/Wagnerdev007" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+		</div>
+	</footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
